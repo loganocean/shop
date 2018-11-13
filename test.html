@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logan's Shop</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+	<style type="text/css">
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: white;
+		}
+
+		.container {
+			background: white;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 2fr;
+			grid-template-rows: 3fr 1fr 2fr 2fr;
+			grid-template-areas: 
+				"B B B B"
+				"P P P P"
+				". i1 d1 d1"
+				". i2 d2 d2";
+			grid-gap: 10px;
+			padding: 20px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#banner {
+			grid-area: B;
+			background: url(https://i.ytimg.com/vi/hPCotoawhk0/maxresdefault.jpg);
+			background-size: cover;
+			background-position: center;
+			font-size: 100px;
+			color: black;
+			font-family: impact;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			border-radius: 20%;
+		}
+
+		#pricing {
+			grid-area: P;
+			color: black;
+			background: white;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			font-family: segoe print;
+			font-size: 40px;
+		}
+
+		#item1 {
+			grid-area: i1;
+			background: url(https://media1.tenor.com/images/b3e88a95ea85025da880696fb627cd66/tenor.gif?itemid=5182167);
+			background-size: cover;
+			background-position: center;
+			border-radius: 100%;
+		}
+
+		#item2 {
+			grid-area: i2;
+			background: url(https://media.giphy.com/media/BI2fB0DCdz2lG/giphy.gif);
+			background-size: cover;
+			background-position: center;
+			border-radius: 100%;
+		}
+
+		#des1 {
+			grid-area: d1;
+			font-size: 20px;
+			font-family: lucida console;
+			background: white;
+			color: black;
+			background-size: cover;
+			background-position: center;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		#des2 {
+			grid-area: d2;
+			font-size: 20px;
+			font-family: lucida console;
+			background: white;
+			color: black;
+			background-size: cover;
+			background-position: center;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="banner">LOGAN'S SHOP</div>
+		<div class="item" id="pricing" align="center"><strong>Pricing</strong></div>
+		<div class="item" id="item1"></div>
+		<div class="item" id="item2"></div>
+		<div class="item" id="des1" align="center"><strong>$5 : Homework completed with the correct answers on time.
+		$10 : Basic outline of the struture needed for a project, each person's code will be unique and different.</strong></div>
+		<div class="item" id="des2" align="center"><strong>$15 : More complicated homework fully completed on time.
+		$30-50 : Full completion of project with images, text, and styling. (Price depends on complexity of project)</strong></div>
+
+	</div>
+
+</body>
+</html>
